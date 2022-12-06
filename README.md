@@ -1,7 +1,8 @@
 # iCroc
 
+Download [the latest release from appstore](https://apps.apple.com/us/app/id6444355962?platform=iphone)
 
-![Screen1](imgs/screenshot-1.png)
+![appstore](imgs/appstore.png)
 
 <p align="center">
 <img
