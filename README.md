@@ -1,5 +1,8 @@
 # iCroc
 
+
+![Screen1](imgs/screenshot-1.png)
+
 <p align="center">
 <img
     src="https://user-images.githubusercontent.com/6550035/46709024-9b23ad00-cbf6-11e8-9fb2-ca8b20b7dbec.jpg"
@@ -25,7 +28,7 @@ Status"></a>
 
 For more information about `croc`, see [my blog post](https://schollz.com/software/croc6) or read a [recent interview I did](https://console.substack.com/p/console-91).
 
-![Example](src/install/customization.gif)
+![Example](imgs/customization.gif)
 
 ## Install
 
