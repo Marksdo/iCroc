@@ -2,7 +2,11 @@
 
 Download [the latest release from appstore](https://apps.apple.com/us/app/id6444355962?platform=iphone)
 
-![appstore](imgs/appstore.png)
+![macOS-send](imgs/macos-send-compress.gif)
+
+![macOS-receive](imgs/macos-receive-compress.gif)
+
+<a href="https://icroc.marksdo.com"><img src="imgs/appstore.png" alt="iCroc Web"></a>
 
 <p align="center">
 <img
