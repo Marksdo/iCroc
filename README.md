@@ -2,6 +2,10 @@
 
 Download [the latest release from appstore](https://apps.apple.com/us/app/id6444355962)
 
+![macOS-active-iCroc](imgs/macos-active-step1.png)
+
+![macOS-active-iCroc](imgs/macos-active-step2.png)
+
 ![macOS-send](imgs/macos-send-compress.gif)
 
 ![macOS-receive](imgs/macos-receive-compress.gif)
