@@ -1,6 +1,6 @@
 # iCroc - Croc cli app iOS GUI Client
 
-Download [the latest release from appstore](https://apps.apple.com/us/app/id6444355962?platform=iphone)
+Download [the latest release from appstore](https://apps.apple.com/us/app/id6444355962)
 
 ![macOS-send](imgs/macos-send-compress.gif)
 
