@@ -2,12 +2,15 @@
 
 Download [the latest release from appstore](https://apps.apple.com/us/app/id6444355962)
 
+## macOS active iCroc in Settings
 ![macOS-active-iCroc](imgs/macos-active-step1.png)
 
 ![macOS-active-iCroc](imgs/macos-active-step2.png)
 
+## macOS iCroc send 
 ![macOS-send](imgs/macos-send-compress.gif)
 
+## macOS iCroc receive
 ![macOS-receive](imgs/macos-receive-compress.gif)
 
 <a href="https://icroc.marksdo.com"><img src="imgs/appstore.png" alt="iCroc Web"></a>
