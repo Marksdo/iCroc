@@ -9,9 +9,16 @@
 - [简体中文](README.zh_cn.md)
 - [繁体中文](README.zh_tw.md)
 
-# iCroc - Croc cli app iOS GUI Client
+# iCroc - Croc cli app for iOS & macOS
 
 Download [the latest release from appstore](https://apps.apple.com/us/app/id6444355962)
+
+V1.3
+---
+- Completely redesign the entire app interface and operation logic.
+- Upgrade embed croc version to v10.0.8
+- Add support iOS & macOS handoff feature
+- Support more languages
 
 V1.1
 ---

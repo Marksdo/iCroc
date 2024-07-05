@@ -9,41 +9,59 @@
 - [简体中文](README.zh_cn.md)
 - [繁体中文](README.zh_tw.md)
 
-# iCroc - Application GUI iOS Croc Client
+# iCroc - Application CLI de Croc pour iOS et macOS
 
 Téléchargez [la dernière version depuis l'App Store](https://apps.apple.com/us/app/id6444355962)
 
+V1.3
+---
+- Refonte complète de toute l'interface de l'application et de la logique de fonctionnement.
+- Mise à jour de la version embarquée de croc à v10.0.8.
+- Ajout de la prise en charge de la fonctionnalité Handoff pour iOS et macOS.
+- Prise en charge de plus de langues.
+
 V1.1
 ---
-- Rédesign de l'icône de l'application
-- Correction de bugs et améliorations de performance
+- Refonte de l'icône de l'application.
+- Corrections de bugs et améliorations des performances.
 
 V1.0
 ---
-Croc est un outil qui permet à deux ordinateurs de transférer simplement et en toute sécurité des fichiers et des dossiers. À ma connaissance, croc est le seul outil de transfert de fichiers en ligne de commande qui fait ce qui suit :
+croc est un outil qui permet à deux ordinateurs de transférer des fichiers et des dossiers de manière simple et sécurisée. À ma connaissance, croc est le seul outil de transfert de fichiers CLI qui offre toutes les fonctionnalités suivantes :
 
-- permet à deux ordinateurs de transférer des données (en utilisant un relais)
-- fournit un chiffrement de bout en bout (en utilisant PAKE)
-- permet des transferts faciles entre différentes plateformes (Windows, Linux, Mac)
-- permet de transférer plusieurs fichiers
-- permet de reprendre des transferts interrompus
-- pas besoin de serveur local ou de redirection de port
-- privilégie l'IPv6 avec un retour à l'IPv4 en cas de besoin
-- peut utiliser un proxy, comme Tor
+- Permet à deux ordinateurs de transférer des données (en utilisant un relais).
+- Fournit un chiffrement de bout en bout (en utilisant PAKE).
+- Facilite les transferts multiplateformes (Windows, Linux, Mac).
+- Permet des transferts de plusieurs fichiers.
+- Permet de reprendre les transferts interrompus.
+- Pas besoin de serveur local ou de redirection de port.
+- Priorité à IPv6 avec basculement sur IPv4.
+- Peut utiliser un proxy, comme Tor.
 
-L'application en ligne de commande sur laquelle celle-ci est basée peut être trouvée ici :
+L'application en ligne de commande sur laquelle elle est basée se trouve ici :
 
 https://github.com/schollz/croc
 
-## Activation d'iCroc sur macOS dans les paramètres
-![macOS-active-iCroc](images/macos-active-step1.png)
+## Activer iCroc dans les paramètres de macOS
+![macOS-iCroc-1](images/macos1.png)
+![macOS-iCroc-2](images/macos2.png)
+![macOS-iCroc-3](images/macos3.png)
 
-![macOS-active-iCroc](images/macos-active-step2.png)
+# 🚚 Envoi rapide de fichiers avec iCroc
+- Sélectionnez des fichiers dans le Finder, puis utilisez "Ouvrir avec iCroc".
+- Dans le Finder, sélectionnez des fichiers et utilisez ⌘+C pour copier, puis ouvrez iCroc et utilisez ⌘+V pour envoyer les fichiers.
+- Faites glisser les fichiers dans iCroc.
 
-## Envoi avec iCroc sur macOS
-![macOS-send](images/macos-send-compress.gif)
+# ⚡ Handoff
+- Installer l'application iCroc sur les appareils iOS et macOS.
+- Activer la fonctionnalité Handoff sur les appareils iOS et macOS.
+- Lorsque l'expéditeur génère une phrase de code, iCroc sur l'autre appareil recevra automatiquement la phrase de code.
 
-## Réception avec iCroc sur macOS
-![macOS-receive](images/macos-receive-compress.gif)
+# 🔮 Reprendre une tâche interrompue
+- L'expéditeur renvoie le fichier et le récepteur utilise le format nouvelle phrase de code@ancienne phrase de code, ex : 4161-mambo-young-baby@7611-south-concept-satire.
+- L'expéditeur renvoie le fichier en utilisant le jeton personnalisé comme ancienne phrase de code.
 
-<a href="https://icroc.marksdo.com"><img src="images/appstore.png" alt="iCroc Web"></a>
+# 💾 Dossier de réception personnalisé
+- Le dossier de réception sera enregistré dans ~/Downloads/'${code-phrase}'.
+- Utiliser '@nomDossier' pour enregistrer dans ~/Downloads/nomDossier, ex : 8443-siren-mayor-origin@mypics.
+- Utiliser le même dossier de destination permettra de reprendre automatiquement les tâches de transfert interrompues.

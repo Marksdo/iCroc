@@ -9,41 +9,59 @@
 - [简体中文](README.zh_cn.md)
 - [繁体中文](README.zh_tw.md)
 
-# iCroc - クロックCLIアプリiOS GUIクライアント
+# iCroc - iOSおよびmacOS用のCroc CLIアプリ
 
-[最新リリースをAppStoreからダウンロードする](https://apps.apple.com/us/app/id6444355962)
+[App Storeから最新リリースをダウンロード](https://apps.apple.com/us/app/id6444355962)
+
+V1.3
+---
+- アプリのインターフェイスと操作ロジックを完全に再設計。
+- 組み込みのcrocバージョンをv10.0.8にアップグレード。
+- iOSおよびmacOSのハンドオフ機能を追加。
+- より多くの言語をサポート。
 
 V1.1
 ---
-- アプリアイコンのリデザイン
-- 不具合修正とパフォーマンスの改善
+- アプリアイコンを再設計。
+- バグ修正とパフォーマンスの向上。
 
 V1.0
 ---
-crocは、2つのコンピューター間で簡単かつ安全にファイルやフォルダを転送するためのツールです。私の知る限りでは、crocは次のすべての機能を備えたCLIファイル転送ツールです。
+crocは、任意の2台のコンピュータ間でファイルやフォルダを簡単かつ安全に転送できるツールです。私の知る限り、crocは以下のすべてを行う唯一のCLIファイル転送ツールです：
 
-- リレーを使用して、任意の2つのコンピューター間でデータを転送できる
-- PAKEを使用したエンドツーエンドの暗号化を提供する
-- 簡単なクロスプラットフォームの転送を可能にする（Windows、Linux、Mac）
-- 複数のファイル転送が可能
-- 中断された転送を再開できる
-- ローカルサーバーやポート転送は不要
-- IPv6優先でIPv4のフォールバックを備える
-- Torのようなプロキシを使用できる
+- 任意の2台のコンピュータ間でデータを転送可能（リレーを使用）
+- エンドツーエンドの暗号化を提供（PAKEを使用）
+- クロスプラットフォーム転送を簡単に実現（Windows、Linux、Mac）
+- 複数のファイル転送を許可
+- 中断された転送の再開を許可
+- ローカルサーバーやポートフォワーディングが不要
+- IPv6優先でIPv4フォールバック
+- torなどのプロキシを使用可能
 
-これに基づいたコマンドラインアプリケーションは次の場所から見つけることができます。
+このコマンドラインアプリケーションのソースコードは以下で見つけることができます：
 
 https://github.com/schollz/croc
 
-## macOSの設定でiCrocをアクティブにする
-![macOS-active-iCroc](images/macos-active-step1.png)
+## macOSの設定でiCrocを有効化
+![macOS-iCroc-1](images/macos1.png)
+![macOS-iCroc-2](images/macos2.png)
+![macOS-iCroc-3](images/macos3.png)
 
-![macOS-active-iCroc](images/macos-active-step2.png)
+# 🚚 iCrocでファイルを素早く送信
+- Finderでファイルを選択してiCrocで開く
+- Finderでファイルを選択して⌘+Cでコピーし、iCrocを開いて⌘+Vでファイルを送信
+- ファイルをiCrocにドラッグ
 
-## macOSのiCrocで送信する
-![macOS-send](images/macos-send-compress.gif)
+# ⚡ ハンドオフ
+- iOSおよびmacOSデバイスにiCrocアプリをインストール
+- iOSおよびmacOSでハンドオフ機能を有効化
+- 送信者がコードフレーズを生成すると、他のデバイスのiCrocが自動的にコードフレーズを取得
 
-## macOSのiCrocで受信する
-![macOS-receive](images/macos-receive-compress.gif)
+# 🔮 中断されたタスクを再開
+- 送信者がファイルを再送し、受信者はnew code-phrase@old code-phrase形式を使用 例: 4161-mambo-young-baby@7611-south-concept-satire
+- 送信者が前のコードフレーズをカスタムトークンとして使用してファイルを再送信
 
-<a href="https://icroc.marksdo.com"><img src="images/appstore.png" alt="iCroc Web"></a>
+# 💾 カスタム受信フォルダ
+- 受信フォルダは~/Downloads/'${code-phrase}'に保存されます
+- '@folderName'を使用すると~/Downloads/folderNameに保存されます 例: 8443-siren-mayor-origin@mypics
+- 同じターゲットフォルダを使用すると中断された転送タスクが自動的に再開されます
